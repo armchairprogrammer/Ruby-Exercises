@@ -1,4 +1,8 @@
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-string = "own"
 
-dictionary.each { |value| puts value if value.include?(string)}
+def substrings(string, dictionary)
+  puts dictionary.select { |value| string.include?(value)}
+end
+
+substrings("Howdy, partner!", dictionary)
+
